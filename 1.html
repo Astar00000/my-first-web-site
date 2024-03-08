@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<title>Astar WEB1 - HTML</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<h1><a href="index.html">WEB</a></h1>
+<ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+</ol>
+
+
+<h2>HTML</h2>
+<p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/index.html" target="_blank" title="html5 speicification">
+    Hypertext Markup Language (HTML)</a> is the standaed markup</p>
+<img src="coding.jpg" width="100%">
+<p style="margin-top:40px;">language for <strong>creating <u>web</u> pages</strong> and web applications.
+    <br>This HTML usage data comes from 11.3 million index pages gathered from top twenty Google results,<br> 
+    for about 30 million keywords - chosen by keyword volume.<br> To learn more about this data, visit the FAQ section.</p>
+
+<h1>W3C</h1>
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+
+<ul>
+    <li>egoing</li>
+    <li>k8805</li>
+    <li>youbin</li>
+</ul>
+<ul>
+    <li>1. HTML</li>
+    <li>2. CSS</li>
+    <li>3. JavaScript</li>
+</ul>
+
+<p>
+    빛의 삼원색은
+    <span style="color: red;">빨강</span>,
+    <span style="color: green;">초록</span>,
+    <span style="color: blue;">파랑</span>으로
+    구성되어 있습니다.
+</p>
+
+<p>이 문장에는 <span id="targetSpan" style="background-color: gold;">특정 부분</span>이 있습니다.</p>
+<button type="button" id="targetSpanBtn">텍스트 변경하기</button>
+
+<script>
+  // JavaScript를 사용하여 버튼을 클릭하면 특정 span 요소의 텍스트를 변경합니다.
+  const btn = document.getElementById('targetSpanBtn');
+
+  btn.addEventListener("click", () => {
+    const targetSpan = document.getElementById('targetSpan');
+    targetSpan.innerText = '변경된 텍스트';
+  });
+</script>
+</body>
+</html>
