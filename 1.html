@@ -7,13 +7,36 @@
 
 <body>
 <h1><a href="index.html">WEB</a></h1>
-
-<Input type="button" value="night" onclick="
+<input type="button" value="night" onclick="
 document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';">
+document.querySelector('body').style.color='white';
+">
+
+<input type="button" value="되나" onclick="
+document.querySelector('body').style.backgroundColor='white';
+">
+
 <Input type="button" value="day" onclick="
 document.querySelector('body').style.backgroundColor='white';
 document.querySelector('body').style.color='black';">
+
+<br>
+<input type="button" value="왜안돼" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';">
+
+<br>
+<input id="night_day" type="button" value="night" onclick="
+if(document.querySelector('#night_day').value==='night'){
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+document.querySelector('#night_day').value='day';
+} else {
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+document.querySelector('#night_day').value='night';
+}
+">
 
 <ol>
     <li><a href="1.html">HTML</a></li>
@@ -74,5 +97,34 @@ document.querySelector('body').style.color='black';">
 <input type="checkbox">
 </p>
 
+<br>
+<input type="button" value="night" onclick="
+if(this.value==='night'){
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+this.value='day';
+} else {
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+this.value='night';
+}
+">
+<br>
+<input type="button" value="night" onclick="
+var target=document.querySelector('body');
+if(this.value==='night'){
+target.style.backgroundColor='black';
+target.style.color='white';
+this.value='day';
+var links=document.getElementsByTagName('a');
+for (var i=0; i<links.length; i++){link[i].style.color='#D5A9EA';}
+} else {
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value='night';
+var links=document.getElementsByTagName('a');
+for (var i=0; i<links.length; i++){link[i].style.color='#155E7E';}
+}
+">
 </body>
 </html>
