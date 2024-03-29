@@ -7,6 +7,14 @@
 
 <body>
 <h1><a href="index.html">WEB</a></h1>
+
+<Input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';">
+<Input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';">
+
 <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -61,5 +69,10 @@
     targetSpan.innerText = '변경된 텍스트';
   });
 </script>
+<p style="margin-top: 40px;">
+<input type="checkbox">
+<input type="checkbox">
+</p>
+
 </body>
 </html>
